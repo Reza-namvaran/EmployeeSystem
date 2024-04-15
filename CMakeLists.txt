@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.26.1)
 
 project(EmployeeSystem
-    DESCRIPTION "Twitterak, Free like in Freedom."
     HOMEPAGE_URL "https://github.com/Reza-namvaran/EmployeeSystem"
     LANGUAGES CXX
     VERSION 0.1
