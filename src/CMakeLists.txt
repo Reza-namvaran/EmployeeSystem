@@ -1,5 +1,6 @@
 set(PROJECT_SOURCES
     main.cpp
+    task.cpp
 )
 
 add_executable(EmployeeSystem
