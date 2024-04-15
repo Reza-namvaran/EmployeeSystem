@@ -1,7 +1,5 @@
 # Employee Management System
 
-👨‍💼👩‍💼📊
-
 ## Overview
 
 The Employee Management System is a C++ application that allows users to manage employee records within an organization. Users can perform various operations like adding new employees, updating existing employee information, deleting employees, and viewing the list of employees.
@@ -9,8 +7,11 @@ The Employee Management System is a C++ application that allows users to manage 
 ## Features
 
 🔹 Add new employees with details such as name, ID, position, and salary
+
 🔹 Update existing employee information
+
 🔹 Delete employees from the system
+
 🔹 View the list of all employees in the organization
 
 ## Requirements
@@ -52,10 +53,9 @@ make .
 
 1. Run the compiled executable:
 ```bash
-./build/bin/EmployeeSystem
+./bin/EmployeeSystem
 ```
-
-### TODO
+#### #TODO
 
 ## Contributing
 
