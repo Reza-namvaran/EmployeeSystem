@@ -13,7 +13,6 @@ class Employee{
     private:
         std::string first_name;
         std::string last_name;
-        std::string position;
         Position position;
 
         std::vector<Task const*> tasks;
@@ -29,11 +28,10 @@ class Employee{
         void setLastName(const std::string& pl_name);
         void setPosition(const std::string& p_position);
 
-        const std::string& getFirstName() const { return first_name;};
-        const std::string& getLastName()  const { return last_name;};
-        const std::string getFullName()  const { return first_name + " " + last_name;};
-        // const Position& getPosition()  const { return position;};
-        /// TODO: fix the position bug
+        const std::string& getFirstName() const { return this->first_name;};
+        const std::string& getLastName()  const { return this->last_name;};
+        const std::string getFullName()  const { return this->first_name + " " + this->last_name;};
+        const Position& getPosition()  const { return this->position;};
         const std::vector<Task const*>& getTasks() const { return this->tasks; };
         void assign(const Task& task) { this->tasks.push_back(&task);};
         void removeTask(const Task& task);
