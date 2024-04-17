@@ -18,21 +18,17 @@ class Employee{
         std::vector<Task const*> tasks;
 
     public:
-        Employee(const std::string& first_name, const std::string& last_name,const std::string& position){
-            this->setFirstName(first_name);
-            this->setLastName(last_name);
-            this->setPosition(position);
-        }
-
+        Employee(const std::string& first_name, const std::string& last_name,const std::string& position);
+        
         void setFirstName(const std::string& pf_name);
         void setLastName(const std::string& pl_name);
         void setPosition(const std::string& p_position);
 
-        const std::string& getFirstName() const { return this->first_name;};
-        const std::string& getLastName()  const { return this->last_name;};
-        const std::string getFullName()  const { return this->first_name + " " + this->last_name;};
-        const Position& getPosition()  const { return this->position;};
-        const std::vector<Task const*>& getTasks() const { return this->tasks; };
-        void assign(const Task& task) { this->tasks.push_back(&task);};
+        const std::string& getFirstName() const;
+        const std::string& getLastName() const;
+        const std::string getFullName() const;
+        const Position& getPosition() const;
+        const std::vector<Task const*>& getTasks() const;
+        void assign(const Task& task);
         void removeTask(const Task& task);
 };
